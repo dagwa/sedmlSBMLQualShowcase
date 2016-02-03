@@ -4,24 +4,34 @@ The idea of a github-based, fully featured showcase is taken from the [CombineAr
 
 # examples contained in this showcase
 
-We used four examples to demonstrate how SED-ML would be used for experiments run on SBML Qual models:
+We use four examples to demonstrate how SED-ML would be used for experiments run on SBML Qual models:
 
- *  MAPK model: taken from the [GinSim repository](http://ginsim.org/node/173)
+
  * Toy model: taken from the SBML Qual Specification [Section 4.1](http://co.mbine.org/specifications/sbml.level-3.version-1.qual.version-1.release-1.pdf)
+  * Petri net model: taken from the SBML Qual Specification [Section 4.2](http://co.mbine.org/specifications/sbml.level-3.version-1.qual.version-1.release-1.pdf
  * Lambda phage model: taken from the GinSim tutorial
- * Petri net model: taken from the SBML Qual Specification [Section 4.3](http://co.mbine.org/specifications/sbml.level-3.version-1.qual.version-1.release-1.pdf)
+ *  MAPK model: taken from the [GinSim repository](http://ginsim.org/node/173)
 
-## The MAPK model
-
-
-
-## The toy model
+  ## The toy model
 
 
-## the Lambda phage model
+  ## The Petri Net model
 
 
-## The Petri Net model
+  ## the Lambda phage model
+
+
+
+
+  ## The MAPK model
+
+The following resources are related to this example:
+* Models: 
+* Publication:
+* Figures: 
+
+The following experiment should be run on the model(s):
+
 
 
 
