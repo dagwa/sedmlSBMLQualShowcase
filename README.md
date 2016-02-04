@@ -15,8 +15,11 @@ We use four examples to demonstrate how SED-ML would be used for experiments run
 
 # Organisation of files
 The files in each of the four example folders are organised as follows:
+
 **models:** Files that describe and encode the biological system, using SBML L3 with SBML Qual extension. 
+
 **simulations:** Files that encode the simulation setup, using SED-ML L1V2 plus the proposed extensions necessary for discrete simulations
+
 **figures:** Graphical representations of the models and of the results obtained from the simulation experiments, using png format.
 
 I chose this structure because it is a convenient way for me to organise my COMBINE Archive. However, the structure is not mandatory.
