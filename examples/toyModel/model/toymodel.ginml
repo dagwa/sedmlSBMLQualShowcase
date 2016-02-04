@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://gin.univ-mrs.fr/GINsim/GINML_2_1.dtd">
+<gxl>
+  <graph id="defaultID" class="regulatory" nodeorder="A B C">
+    <node id="A" maxvalue="2">
+      <parameter val="1" idActiveInteractions="C:A:1"/>
+      <parameter val="2" idActiveInteractions="A:A:1"/>
+      <parameter val="2" idActiveInteractions="A:A:1 C:A:1"/>
+      <parameter val="2" idActiveInteractions="A:A:2 C:A:1"/>
+    </node>
+    <node id="B" maxvalue="1">
+      <parameter val="1"/>
+    </node>
+    <node id="C" maxvalue="1">
+      <parameter val="1"/>
+    </node>
+    <edge id="A:A:1" from="A" to="A" sign="positive" minvalue="1"/>
+    <edge id="A:A:2" from="A" to="A" sign="negative" minvalue="2"/>
+    <edge id="C:A:1" from="C" to="A" sign="positive" minvalue="1"/>
+  </graph>
+</gxl>
