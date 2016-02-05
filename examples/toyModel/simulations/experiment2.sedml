@@ -25,16 +25,23 @@
     <task id="task1" modelReference="model1" simulationReference="sim2" >
    	<class id="class1" name="all species" mode="Kisao:Asynchronuous" rank="1">
 		<listOfMembers>
-			<member link="sbml/model/listOfQualitativeSpecies" regulation="up" />
+			<member link="sbml:sbml/sbml:model/qual:listOfQualitativeSpecies" regulation="up" />
 		</listOfMembers>	
 	</class>
     </task>	
   </listOfTasks>
 
-  <listOfDataGenerators />
+  <listOfDataGenerators>
+    <dataGenerator id="dg1" name="species to be considered in the transition graph">
+      <listOfVariables>
+	<variable id="priorityClass1" taskReference="task1">
+      </listOfVariables>
+    </dataGenerator>
+  </listOfDataGenerators>
 
 
   <listOfOutputs>
-    <transitionGraph id="graph1"/>
+    <transitionGraph id="graph1" classReference="priorityClass1"/>
   </listOfOutputs>
+
 </sedML>
