@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+ <notes> This is a sketch of a SED-ML file for the toy model in SBML Qual format. Here we define the initial state for the model as: A=0, B=0, C=0. Leading to a transition graph that only considers this one state as a starting point, thus reducing the number of possible transitions.
+ </notes>
+ <listOfSimulations>
+    <discreteSimulation id="sim2" name="experiment 2">
+  	<algorithm kisaoID="kisao:KISAO_0000363" />
+    </discreteSimulation>
+  </listOfSimulations>
+
+
+
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="../model/toymodel.sbml" />
+    <listOfChanges>
+      <changeAttribute target="/sbml:sbml/sbml:model/qual:listOfQualitativeSpecies[@id='A']/@initialLevel" newValue="0" />
+      <changeAttribute target="/sbml:sbml/sbml:model/qual:listOfQualitativeSpecies[@id='B']/@initialLevel" newValue="0" />
+      <changeAttribute target="/sbml:sbml/sbml:model/qual:listOfQualitativeSpecies[@id='C']/@initialLevel" newValue="0" />
+    </listOfChanges>
+  </listOfModels>
+
+
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim2" >
+   	<class id="class1" name="all species" mode="Kisao:Asynchronuous" rank="1">
+		<listOfMembers>
+			<member link="sbml/model/listOfQualitativeSpecies" regulation="up" />
+		</listOfMembers>	
+	</class>
+    </task>	
+  </listOfTasks>
+
+  <listOfDataGenerators />
+
+
+  <listOfOutputs>
+    <transitionGraph id="graph1"/>
+  </listOfOutputs>
+</sedML>
